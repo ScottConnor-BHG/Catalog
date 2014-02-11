@@ -20,6 +20,19 @@
 	margin:0;
 	padding:0;
 }
+.quoteBlock{
+	border:3px dashed green;
+	margin-bottom:20px;
+	float:right;
+
+}
+.quoteBlock span{
+	padding:5px;
+	color:red;
+
+}
+
+
 
 /** General Style Info **/
 body {

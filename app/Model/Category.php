@@ -11,6 +11,15 @@ class Category extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'name';
+	// public $displayField = 'name';
+
+	public $hasMany = 'Items';
+
+	public $validate = array(
+		'name'=>'notEmpty',
+		'length_type'=>'notEmpty'
+	);
+
+	// public $displayField = 'length_type';
 
 }

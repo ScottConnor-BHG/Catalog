@@ -84,9 +84,12 @@ class ItemsController extends AppController {
 				}
 			}
 			$this->request->data=$data;
+			$this->set('categories',$this->Item->Category->find('list',array('order'=>'name')));
 	}
 	public function add()
 	{
+			$this->set('title_for_layout','Add an item');
+			
 			if($this->request->is('post'))
 			{
 				$this->Item->create();
@@ -100,11 +103,13 @@ class ItemsController extends AppController {
 					//
 				}
 			}
+			$this->set('categories',$this->Item->Category->find('list',array('order'=>'name')));
 	}
 
 
 	public function view($id=null)
 	{
+		$this->layout='_default';
 		if(!$id)
 		{
 			throw new NotFoundException(__("ID was not set."));

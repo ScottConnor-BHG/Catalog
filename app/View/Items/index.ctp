@@ -38,3 +38,5 @@
 <?php endforeach; ?>
 <?php unset($items); ?>
 </table>
+<?php echo $this->element('quote_block',array('quote'=>'To infinity and beyond'));
+?>

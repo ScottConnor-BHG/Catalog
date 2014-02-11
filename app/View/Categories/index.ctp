@@ -1,4 +1,9 @@
 <div class="categories index">
+	<?php
+	$this->extend('/Common/header');
+	$this->assign('title', 'List of Categories');
+	?>
+
 	<h2><?php echo __('Categories'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>

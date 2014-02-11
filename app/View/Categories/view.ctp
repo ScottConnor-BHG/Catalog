@@ -1,3 +1,7 @@
+<?php
+	echo $this->Html->css('header',null,array('inline'=>false));
+?>
+
 <div class="categories view">
 <h2><?php  echo __('Category'); ?></h2>
 	<dl>
