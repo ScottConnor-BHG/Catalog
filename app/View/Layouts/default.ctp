@@ -14,6 +14,7 @@
 							<ul>
 									<li><a href="/Items">Items</a></li>
 									<li><a href="/Categories">Categories</a></li>
+									<li><a href="/Users">Users</a></li>
 							</ul>
 						</div>
 						</div>
