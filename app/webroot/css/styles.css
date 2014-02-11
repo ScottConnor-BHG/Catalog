@@ -133,4 +133,9 @@ td{
 	width:50%;
 	
 }
+.login{
+	text-align: right;
+	position: relative;
+	right:50%;
+}
 

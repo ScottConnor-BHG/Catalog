@@ -6,11 +6,20 @@ App::uses('AppModel', 'Model');
  */
 class User extends AppModel {
 
+	// 	public function beforeSave()
+	// {
+		
+	// 	$this->data['User']['password'] = 
+	// 	AuthComponent::password($this->data['User']['password']);
+	// 	return true;
+
+	// }
 /**
  * Validation rules
  *
  * @var array
  */
+
 	public $validate = array(
 		'last_name' => array(
 			'notempty' => array(
@@ -33,4 +42,5 @@ class User extends AppModel {
 			),
 		),
 	);
+
 }

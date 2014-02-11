@@ -12,9 +12,19 @@
 								<h1><a href=""><span>My Catalog</span></a></h1>
 														<div id = "Navigation" class = "widthWrapper">
 							<ul>
+																	<?php
+									if(AuthComponent::user())
+									{
+										echo '<li><a href="/users/logout">Log Out</a></li>';
+									}else
+									{
+										echo '<li><a href="/users/login">Log In</a></li>';
+									}
+									?>
 									<li><a href="/Items">Items</a></li>
 									<li><a href="/Categories">Categories</a></li>
 									<li><a href="/Users">Users</a></li>
+
 							</ul>
 						</div>
 						</div>
