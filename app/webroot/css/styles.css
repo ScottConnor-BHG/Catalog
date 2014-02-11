@@ -118,4 +118,19 @@ td{
 	color:red;
 
 }
+.addItemForm{
+	position:relative;
+	right:10%;
+	text-align: right;
+
+	width:80%;
+}
+.addItemForm input{
+	width:50%;
+	
+}
+.addItemForm textarea{
+	width:50%;
+	
+}
 
